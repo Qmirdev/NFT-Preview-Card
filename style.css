@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-image: url('background.png');
+}
+p{
+    font-size: 16px;
+    font-family: Outfit;
+    font-weight: 300;
+}
+span{
+    font-size: 18px;
+    font-family: Outfit;
+    font-weight: 300;
+}
+h2{
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+
+
+.card-container {
+    width: 325px;
+    height: 540px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow:
+    0px 1px 2px 4px rgba(0, 0, 0, 0.05),
+    1px 2px 4px 8px rgba(0, 0, 0, 0.05),
+    2px 4px 8px 16px rgba(0, 0, 0, 0.05),
+    4px 8px 16px 32px rgba(0, 0, 0, 0.05);
+    transition: 300ms;
+}
+.card-container:hover {
+    box-shadow:
+    0px 1px 2px 4px rgba(0, 0, 0, 0.15),
+    1px 2px 4px 8px rgba(0, 0, 0, 0.15),
+    2px 4px 8px 16px rgba(0, 0, 0, 0.15),
+    4px 8px 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+
+}
+.details-container {
+    padding: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.image-container .nft #nft {
+    width: 275px;
+    border-radius: 20px;
+    z-index: 5;
+}
+.nft-hover {
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.overlay {
+    width: 275px;
+    height: 275px;
+    background-color: hsl(178, 100%, 50%, 50%);
+    border-radius: 20px;
+}
+.image-container .nft .nft-hover #view {
+    width: 35px;
+    z-index: 5;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
+.nft-hover:hover {
+    opacity: 1;
+}
+
+
+
+.title h2 {
+    color: hsl(0, 0%, 100%);
+    transition: 300ms;
+}
+.title h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.description p{
+    color:hsl(215, 51%, 70%);
+}
+
+
+
+.ethereum-clock {
+    position: relative;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+}
+.ethereum-clock img{
+    margin-right: 5px;
+}
+.ethereum-clock .clock{
+    float: right;
+}
+.ethereum-clock .ethereum{
+    color: hsl(178, 100%, 50%);
+}
+.ethereum-clock .clock{
+    color: hsl(215, 51%, 70%);
+}
+
+
+
+.user-info {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+.user-info img {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+.user-info p {
+    top: -10px;
+    position: relative;
+    display: inline;
+    color:hsl(215, 51%, 70%);
+}
+.user-info .credit{
+    display: inline-block;
+}
+.user-info .name{
+    display: inline-block;
+}
+.name p {
+    color: white;
+    transition: 300ms;
+}
+.name p:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (min-width : 501px){
+    .card-container {
+        width: 350px;
+        height: 600px;
+    }
+
+
+    .image-container {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .details-container {
+        padding: 25px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .image-container .nft #nft {
+        width: 300px;
+    }
+    .nft-hover {
+        width: 300px;
+        height: 300px;
+        top: 0;
+        left: 25px;
+    }
+    .overlay {
+        width: 300px;
+        height: 300px;
+    }
+    .image-container .nft .nft-hover #view {
+        width: 50px;
+        top: 117.5px;
+        left: 127.5px;
+    }
+
+
+    .description p{
+        margin-bottom: 30px;
+    }
+
+
+    .ethereum-clock {
+        padding-bottom: 25px;
+    }
+    .ethereum-clock img{
+        margin-right: 5px;
+    }
+
+
+    .user-info {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
